@@ -8,4 +8,6 @@ ENV PATH="/home/circleci/.tfenv/bin:${PATH}"
 
 WORKDIR /home/circleci
 
+RUN tfenv install latest:^0.10
+RUN tfenv install latest:^0.11
 RUN tfenv install latest
